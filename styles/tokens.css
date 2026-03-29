@@ -1,0 +1,140 @@
+:root {
+  /* ===========================================
+     COLOR TOKENS
+     =========================================== */
+
+  /* Neutrals */
+  --color-black: #080808;
+  --color-white: #ffffff;
+  --color-gray: #9c9c9c;
+
+  /* Brand */
+  --color-brand: #049bff;
+
+  /* Text Colors */
+  --text-primary: #080808;
+  --text-secondary: #9c9c9c;
+  --text-brand: #049bff;
+
+  /* Icon Colors */
+  --icon-primary: #9c9c9c;
+  --icon-secondary: #080808;
+  --icon-brand: #049bff;
+
+  /* Border Colors */
+  --border-primary: #080808;
+  --border-brand: #049bff;
+
+  /* Surface Colors */
+  --surface-primary: #ffffff;
+
+  /* Tag Colors - Green */
+  --tag-label-green: #07b31e;
+  --tag-background-green: #cdfdcd;
+
+  /* Tag Colors - Yellow */
+  --tag-label-yellow: #ffae00;
+  --tag-background-yellow: #fffbd0;
+
+  /* Tag Colors - Red */
+  --tag-label-red: #ff0004;
+
+  /* Accent Colors */
+  --accent-red: #ffd0d1;
+
+  /* ===========================================
+     SPACING TOKENS
+     =========================================== */
+
+  --spacing-half: 4px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 64px;
+  --spacing-3xl: 80px;
+  --spacing-4xl: 96px;
+  --spacing-5xl: 136px;
+
+  /* Numeric aliases */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+
+  /* ===========================================
+     TYPOGRAPHY TOKENS
+     =========================================== */
+
+  /* Font Families */
+  --font-family-heading: "Raleway", sans-serif;
+  --font-family-body: "IBM Plex Mono", monospace;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Heading Styles - H1 */
+  --h1-font-family: var(--font-family-heading);
+  --h1-font-size: 44px;
+  --h1-font-weight: 800;
+  --h1-line-height: 100%;
+  --h1-letter-spacing: 0;
+
+  /* Heading Styles - H2 */
+  --h2-font-family: var(--font-family-heading);
+  --h2-font-size: 34px;
+  --h2-font-weight: 800;
+  --h2-line-height: 100%;
+  --h2-letter-spacing: 0;
+
+  /* Heading Styles - H3 */
+  --h3-font-family: var(--font-family-heading);
+  --h3-font-size: 24px;
+  --h3-font-weight: 800;
+  --h3-line-height: 100%;
+  --h3-letter-spacing: 0;
+
+  /* Body Styles - Large Bold */
+  --body-lg-bold-font-family: var(--font-family-heading);
+  --body-lg-bold-font-size: 18px;
+  --body-lg-bold-font-weight: 700;
+  --body-lg-bold-line-height: 100%;
+  --body-lg-bold-letter-spacing: 0;
+
+  /* Body Styles - Small */
+  --body-sm-font-family: var(--font-family-body);
+  --body-sm-font-size: 14px;
+  --body-sm-font-weight: 400;
+  --body-sm-line-height: 24px;
+  --body-sm-letter-spacing: 1px;
+
+  /* Body Styles - Small Bold */
+  --body-sm-bold-font-family: var(--font-family-body);
+  --body-sm-bold-font-size: 14px;
+  --body-sm-bold-font-weight: 700;
+  --body-sm-bold-line-height: 100%;
+  --body-sm-bold-letter-spacing: 0;
+
+  /* Body Styles - Extra Small */
+  --body-xs-font-family: var(--font-family-body);
+  --body-xs-font-size: 12px;
+  --body-xs-font-weight: 400;
+  --body-xs-line-height: 21px;
+  --body-xs-letter-spacing: 0;
+
+  /* Body Styles - Extra Small Bold */
+  --body-xs-bold-font-family: var(--font-family-body);
+  --body-xs-bold-font-size: 12px;
+  --body-xs-bold-font-weight: 700;
+  --body-xs-bold-line-height: 24px;
+  --body-xs-bold-letter-spacing: 1px;
+
+  /* Body Styles - Extra Small SemiBold */
+  --body-xs-semibold-font-family: var(--font-family-body);
+  --body-xs-semibold-font-size: 12px;
+  --body-xs-semibold-font-weight: 600;
+  --body-xs-semibold-line-height: 100%;
+  --body-xs-semibold-letter-spacing: 0;
+}
