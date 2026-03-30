@@ -69,6 +69,13 @@
   --font-family-heading: "Raleway", sans-serif;
   --font-family-body: "IBM Plex Mono", monospace;
 
+  /* Font Sizes (Primitives) */
+  --font-size-xxl: 40px;
+  --font-size-xl: 32px;
+  --font-size-lg: 24px;
+  --font-size-sm: 14px;
+  --font-size-xs: 12px;
+
   /* Font Weights */
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
@@ -77,64 +84,64 @@
 
   /* Heading Styles - H1 */
   --h1-font-family: var(--font-family-heading);
-  --h1-font-size: 44px;
-  --h1-font-weight: 800;
+  --h1-font-size: var(--font-size-xxl);
+  --h1-font-weight: var(--font-weight-extrabold);
   --h1-line-height: 100%;
   --h1-letter-spacing: 0;
 
   /* Heading Styles - H2 */
   --h2-font-family: var(--font-family-heading);
-  --h2-font-size: 34px;
-  --h2-font-weight: 800;
+  --h2-font-size: var(--font-size-xl);
+  --h2-font-weight: var(--font-weight-extrabold);
   --h2-line-height: 100%;
   --h2-letter-spacing: 0;
 
   /* Heading Styles - H3 */
   --h3-font-family: var(--font-family-heading);
-  --h3-font-size: 24px;
-  --h3-font-weight: 800;
+  --h3-font-size: var(--font-size-lg);
+  --h3-font-weight: var(--font-weight-extrabold);
   --h3-line-height: 100%;
   --h3-letter-spacing: 0;
 
   /* Body Styles - Large Bold */
   --body-lg-bold-font-family: var(--font-family-heading);
-  --body-lg-bold-font-size: 18px;
-  --body-lg-bold-font-weight: 700;
+  --body-lg-bold-font-size: var(--font-size-lg);
+  --body-lg-bold-font-weight: var(--font-weight-bold);
   --body-lg-bold-line-height: 100%;
   --body-lg-bold-letter-spacing: 0;
 
   /* Body Styles - Small */
   --body-sm-font-family: var(--font-family-body);
-  --body-sm-font-size: 14px;
-  --body-sm-font-weight: 400;
+  --body-sm-font-size: var(--font-size-sm);
+  --body-sm-font-weight: var(--font-weight-regular);
   --body-sm-line-height: 24px;
   --body-sm-letter-spacing: 1px;
 
   /* Body Styles - Small Bold */
   --body-sm-bold-font-family: var(--font-family-body);
-  --body-sm-bold-font-size: 14px;
-  --body-sm-bold-font-weight: 700;
+  --body-sm-bold-font-size: var(--font-size-sm);
+  --body-sm-bold-font-weight: var(--font-weight-bold);
   --body-sm-bold-line-height: 100%;
   --body-sm-bold-letter-spacing: 0;
 
   /* Body Styles - Extra Small */
   --body-xs-font-family: var(--font-family-body);
-  --body-xs-font-size: 12px;
-  --body-xs-font-weight: 400;
+  --body-xs-font-size: var(--font-size-xs);
+  --body-xs-font-weight: var(--font-weight-regular);
   --body-xs-line-height: 21px;
   --body-xs-letter-spacing: 0;
 
   /* Body Styles - Extra Small Bold */
   --body-xs-bold-font-family: var(--font-family-body);
-  --body-xs-bold-font-size: 12px;
-  --body-xs-bold-font-weight: 700;
+  --body-xs-bold-font-size: var(--font-size-xs);
+  --body-xs-bold-font-weight: var(--font-weight-bold);
   --body-xs-bold-line-height: 24px;
   --body-xs-bold-letter-spacing: 1px;
 
   /* Body Styles - Extra Small SemiBold */
   --body-xs-semibold-font-family: var(--font-family-body);
-  --body-xs-semibold-font-size: 12px;
-  --body-xs-semibold-font-weight: 600;
+  --body-xs-semibold-font-size: var(--font-size-xs);
+  --body-xs-semibold-font-weight: var(--font-weight-semibold);
   --body-xs-semibold-line-height: 100%;
   --body-xs-semibold-letter-spacing: 0;
 }
