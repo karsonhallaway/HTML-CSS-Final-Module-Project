@@ -8,6 +8,15 @@
   box-sizing: border-box;
 }
 
+body {
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* ===========================================
    NAVIGATION
    =========================================== */
@@ -68,4 +77,82 @@ nav > div a {
 
 nav > div a:hover {
   color: var(--icon-secondary);
+}
+
+/* ===========================================
+   HEADER / HERO SECTION
+   =========================================== */
+
+header#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  padding-top: var(--spacing-5xl);
+  padding-bottom: var(--spacing-5xl);
+  border-radius: 16px;
+}
+
+header#home .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  width: 538px;
+}
+
+header#home h1 {
+  font-family: var(--h1-font-family);
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--h1-letter-spacing);
+  color: var(--text-primary);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header#home p {
+  font-family: var(--body-sm-font-family);
+  font-size: var(--body-sm-font-size);
+  font-weight: var(--body-sm-font-weight);
+  line-height: var(--body-sm-line-height);
+  letter-spacing: var(--body-sm-letter-spacing);
+  color: var(--text-secondary);
+  max-width: 492px;
+}
+
+header#home a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: 1px solid var(--border-brand);
+  border-radius: 100px;
+  font-family: var(--body-sm-bold-font-family);
+  font-size: var(--body-sm-bold-font-size);
+  font-weight: var(--body-sm-bold-font-weight);
+  color: var(--text-brand);
+  text-decoration: none;
+}
+
+header#home a:hover {
+  background-color: var(--color-brand);
+  color: var(--color-white);
+}
+
+/* Profile Photo */
+header#home > div:last-child {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+header#home > div:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
