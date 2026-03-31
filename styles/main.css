@@ -18,6 +18,82 @@ body {
 }
 
 /* ===========================================
+   SHARED
+   =========================================== */
+
+#case-studies,
+#testimonials,
+#recent-work,
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-2xl);
+}
+
+#case-studies > .content-container,
+#testimonials > .content-container,
+#recent-work > .content-container,
+#contact > .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+#case-studies > .content-container h2,
+#testimonials > .content-container h2,
+#recent-work > .content-container h2,
+#contact > .content-container h2 {
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  line-height: var(--h2-line-height);
+  letter-spacing: var(--h2-letter-spacing);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+nav ul li a,
+#home p,
+#case-studies > .content-container p,
+#case-studies article#work p,
+#testimonials > .content-container p,
+#testimonials blockquote p,
+#recent-work > .content-container p,
+#recent-work .work-container article p,
+#contact > .content-container p,
+footer p {
+  font-family: var(--body-sm-font-family);
+  font-size: var(--body-sm-font-size);
+  font-weight: var(--body-sm-font-weight);
+  line-height: var(--body-sm-line-height);
+  letter-spacing: var(--body-sm-letter-spacing);
+  color: var(--text-secondary);
+}
+
+#case-studies article#work a,
+#recent-work .work-container article a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: 1px solid var(--border-primary);
+  border-radius: 100px;
+  font-family: var(--body-sm-bold-font-family);
+  font-size: var(--body-sm-bold-font-size);
+  font-weight: var(--body-sm-bold-font-weight);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+#case-studies article#work a:hover,
+#recent-work .work-container article a:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+/* ===========================================
    NAVIGATION
    =========================================== */
 
@@ -41,12 +117,6 @@ nav ul {
 nav ul li a {
   display: block;
   padding: var(--spacing-half) var(--spacing-lg);
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -55,7 +125,6 @@ nav ul li a:hover {
   color: var(--text-primary);
 }
 
-/* Social Media Icons */
 nav > #social-icons-container {
   display: flex;
   align-items: center;
@@ -74,7 +143,7 @@ nav > #social-icons-container a {
 }
 
 nav > #social-icons-container i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 nav > #social-icons-container i:hover {
@@ -116,12 +185,6 @@ nav > #social-icons-container i:hover {
 }
 
 #home p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   max-width: 492px;
 }
 
@@ -144,7 +207,6 @@ nav > #social-icons-container i:hover {
   color: var(--color-white);
 }
 
-/* Profile Photo */
 header#home > #avatar-container {
   width: 350px;
   height: 350px;
@@ -164,43 +226,14 @@ header#home > #avatar-container #avatar-img {
    =========================================== */
 
 #case-studies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-2xl);
   padding: 0 var(--spacing-4xl);
 }
 
-/* Section Header */
-#case-studies > .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-md);
-}
-
-#case-studies > .content-container h2 {
-  font-family: var(--h2-font-family);
-  font-size: var(--h2-font-size);
-  font-weight: var(--h2-font-weight);
-  line-height: var(--h2-line-height);
-  letter-spacing: var(--h2-letter-spacing);
-  color: var(--text-primary);
-  text-align: center;
-}
-
 #case-studies > .content-container p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   text-align: center;
   max-width: 570px;
 }
 
-/* Work Article Card */
 #case-studies article#work {
   display: flex;
   align-items: center;
@@ -219,7 +252,6 @@ header#home > #avatar-container #avatar-img {
   flex: 1;
 }
 
-/* Tag */
 #case-studies article#work span {
   display: inline-block;
   padding: 0 10px;
@@ -231,7 +263,6 @@ header#home > #avatar-container #avatar-img {
   letter-spacing: var(--body-xs-bold-letter-spacing);
 }
 
-/* Tag color variants - add classes in HTML or use nth-child */
 #case-studies article#work:nth-child(2) span {
   background-color: var(--tag-background-green);
   color: var(--tag-label-green);
@@ -257,36 +288,9 @@ header#home > #avatar-container #avatar-img {
 }
 
 #case-studies article#work p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   max-width: 421px;
 }
 
-/* Secondary Button */
-#case-studies article#work a {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  border: 1px solid var(--border-primary);
-  border-radius: 100px;
-  font-family: var(--body-sm-bold-font-family);
-  font-size: var(--body-sm-bold-font-size);
-  font-weight: var(--body-sm-bold-font-weight);
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-#case-studies article#work a:hover {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-/* Work Image */
 #case-studies article#work img {
   width: 444px;
   height: 300px;
@@ -301,43 +305,17 @@ header#home > #avatar-container #avatar-img {
    =========================================== */
 
 #testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-2xl);
   padding: var(--spacing-3xl) var(--spacing-4xl);
 }
 
-/* Section Header */
 #testimonials > .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-md);
   width: 570px;
 }
 
-#testimonials > .content-container h2 {
-  font-family: var(--h2-font-family);
-  font-size: var(--h2-font-size);
-  font-weight: var(--h2-font-weight);
-  line-height: var(--h2-line-height);
-  letter-spacing: var(--h2-letter-spacing);
-  color: var(--text-primary);
-  text-align: center;
-}
-
 #testimonials > .content-container p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   text-align: center;
 }
 
-/* Testimonials Grid */
 #testimonials .content-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -345,7 +323,6 @@ header#home > #avatar-container #avatar-img {
   width: 100%;
 }
 
-/* Testimonial Card */
 #testimonials .content-grid article {
   display: flex;
   flex-direction: column;
@@ -356,21 +333,10 @@ header#home > #avatar-container #avatar-img {
   border: 1px solid rgba(129, 129, 129, 0.2);
 }
 
-/* Quote */
 #testimonials blockquote {
   margin: 0;
 }
 
-#testimonials blockquote p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
-}
-
-/* Client Info */
 #testimonials figure {
   display: flex;
   align-items: center;
@@ -398,45 +364,18 @@ header#home > #avatar-container #avatar-img {
    =========================================== */
 
 #recent-work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-2xl);
   padding: var(--spacing-3xl) var(--spacing-4xl);
-
 }
 
-/* Section Header */
 #recent-work > .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: var(--spacing-md);
-}
-
-#recent-work > .content-container h2 {
-  font-family: var(--h2-font-family);
-  font-size: var(--h2-font-size);
-  font-weight: var(--h2-font-weight);
-  line-height: var(--h2-line-height);
-  letter-spacing: var(--h2-letter-spacing);
-  color: var(--text-primary);
-  text-align: center;
 }
 
 #recent-work > .content-container p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   text-align: center;
   max-width: 570px;
 }
 
-/* Work Cards Container */
 #recent-work .work-container {
   display: flex;
   gap: var(--spacing-xl);
@@ -444,7 +383,6 @@ header#home > #avatar-container #avatar-img {
   width: 100%;
 }
 
-/* Work Card */
 #recent-work .work-container article {
   display: flex;
   flex-direction: column;
@@ -453,7 +391,7 @@ header#home > #avatar-container #avatar-img {
 }
 
 #recent-work .work-container article img {
-  width: 400px;
+  width: 100%;
   height: 400px;
   border-radius: 24px;
   border: 1px solid var(--border-primary);
@@ -469,80 +407,26 @@ header#home > #avatar-container #avatar-img {
   color: var(--text-primary);
 }
 
-#recent-work .work-container article p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
-}
-
-/* Secondary Button */
-#recent-work .work-container article a {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  border: 1px solid var(--border-primary);
-  border-radius: 100px;
-  font-family: var(--body-sm-bold-font-family);
-  font-size: var(--body-sm-bold-font-size);
-  font-weight: var(--body-sm-bold-font-weight);
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-#recent-work .work-container article a:hover {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
 /* ===========================================
    CONTACT SECTION
    =========================================== */
 
 #contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-2xl);
   padding-top: var(--spacing-3xl);
   padding-left: var(--spacing-4xl);
   padding-right: var(--spacing-4xl);
 }
 
-/* Section Header */
 #contact > .content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 10px;
   width: 100%;
 }
 
-#contact > .content-container h2 {
-  font-family: var(--h2-font-family);
-  font-size: var(--h2-font-size);
-  font-weight: var(--h2-font-weight);
-  line-height: var(--h2-line-height);
-  letter-spacing: var(--h2-letter-spacing);
-  color: var(--text-primary);
-  text-align: center;
-}
-
 #contact > .content-container p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   text-align: center;
   max-width: 570px;
 }
 
-/* Form */
 #contact form {
   display: flex;
   flex-direction: column;
@@ -551,7 +435,6 @@ header#home > #avatar-container #avatar-img {
   width: 350px;
 }
 
-/* Form Field Group */
 #contact form > div {
   display: flex;
   flex-direction: column;
@@ -560,7 +443,6 @@ header#home > #avatar-container #avatar-img {
   width: 100%;
 }
 
-/* Labels */
 #contact form label {
   font-family: var(--body-xs-semibold-font-family);
   font-size: var(--body-xs-semibold-font-size);
@@ -569,30 +451,9 @@ header#home > #avatar-container #avatar-img {
   color: var(--text-secondary);
 }
 
-/* Input Fields */
-#contact form input {
-  width: 100%;
-  height: 40px;
-  padding: 0 12px;
-  background-color: #f8f8f8;
-  border: 1px solid #d8d8d8;
-  border-radius: 4px;
-  font-family: var(--body-xs-font-family);
-  font-size: var(--body-xs-font-size);
-  font-weight: var(--body-xs-font-weight);
-  line-height: var(--body-xs-line-height);
-  color: var(--text-primary);
-}
-
-#contact form input::placeholder {
-  color: var(--text-secondary);
-}
-
-/* Textarea */
+#contact form input,
 #contact form textarea {
   width: 100%;
-  height: 120px;
-  padding: 12px;
   background-color: #f8f8f8;
   border: 1px solid #d8d8d8;
   border-radius: 4px;
@@ -601,14 +462,24 @@ header#home > #avatar-container #avatar-img {
   font-weight: var(--body-xs-font-weight);
   line-height: var(--body-xs-line-height);
   color: var(--text-primary);
-  resize: vertical;
 }
 
+#contact form input::placeholder,
 #contact form textarea::placeholder {
   color: var(--text-secondary);
 }
 
-/* Submit Button */
+#contact form input {
+  height: 40px;
+  padding: 0 12px;
+}
+
+#contact form textarea {
+  height: 120px;
+  padding: 12px;
+  resize: vertical;
+}
+
 #contact form button {
   display: inline-flex;
   align-items: center;
@@ -643,12 +514,5 @@ footer {
 }
 
 footer p {
-  font-family: var(--body-sm-font-family);
-  font-size: var(--body-sm-font-size);
-  font-weight: var(--body-sm-font-weight);
-  line-height: var(--body-sm-line-height);
-  letter-spacing: var(--body-sm-letter-spacing);
-  color: var(--text-secondary);
   text-align: center;
 }
-
