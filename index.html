@@ -20,20 +20,22 @@
 <body>
   <!-- Navigation -->
   <nav>
-    <ul>
+    <ul id="menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#case-studies">Case Studies</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#recent-work">Recent work</a></li>
       <li><a href="#contact">Get In Touch</a></li>
     </ul>
-
+    
     <div id="social-icons-container">
-      <a href="https://x.com/karsonhallaway?s=21&t=m2BHWO8ov53rRTQPy1SQiQ" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/karsonhallaway/" aria-label="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
-      <a href="https://dribbble.com/KarsonHallaway" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
-      <a href="https://www.instagram.com/karsonhallaway?igsh=MWNscDNkMnRzNWt2Mg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/karsonhallaway?s=21&t=m2BHWO8ov53rRTQPy1SQiQ" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/karsonhallaway/" aria-label="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
+        <a href="https://dribbble.com/KarsonHallaway" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="https://www.instagram.com/karsonhallaway?igsh=MWNscDNkMnRzNWt2Mg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
     </div>
+
+    <i class="fa-solid fa-bars menu-toggle" onclick="toggleMenu()"></i>
   </nav>
 
   <!-- Header / Hero Section -->
@@ -201,5 +203,11 @@
   <footer>
     <p>Made by Karson</p>
   </footer>
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
