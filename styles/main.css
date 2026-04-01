@@ -421,7 +421,7 @@ header#home > #avatar-container #avatar-img {
 }
 
 #contact > .content-container {
-  gap: 10px;
+  gap: var(--spacing-sm);
   width: 100%;
 }
 
