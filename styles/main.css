@@ -101,6 +101,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   gap: var(--spacing-2xl);
   padding-top: var(--spacing-2xl);
   padding-bottom: var(--spacing-xl);
@@ -173,7 +176,7 @@ nav > #social-icons-container i:hover {
   width: 538px;
 }
 
-#home h1 {
+h1 {
   font-family: var(--h1-font-family);
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
@@ -234,7 +237,7 @@ header#home > #avatar-container #avatar-img {
   max-width: 570px;
 }
 
-#case-studies article#work {
+#case-studies article.work {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,7 +247,7 @@ header#home > #avatar-container #avatar-img {
   width: 100%;
 }
 
-#case-studies article#work .content-container {
+#case-studies article.work .content-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -252,7 +255,7 @@ header#home > #avatar-container #avatar-img {
   flex: 1;
 }
 
-#case-studies article#work span {
+#case-studies article.work span {
   display: inline-block;
   padding: 0 10px;
   border-radius: 60px;
@@ -263,22 +266,22 @@ header#home > #avatar-container #avatar-img {
   letter-spacing: var(--body-xs-bold-letter-spacing);
 }
 
-#case-studies article#work:nth-child(2) span {
+#case-studies article.work:nth-child(2) span {
   background-color: var(--tag-background-green);
   color: var(--tag-label-green);
 }
 
-#case-studies article#work:nth-child(3) span {
+#case-studies article.work:nth-child(3) span {
   background-color: var(--tag-background-yellow);
   color: var(--tag-label-yellow);
 }
 
-#case-studies article#work:nth-child(4) span {
+#case-studies article.work:nth-child(4) span {
   background-color: var(--accent-red);
   color: var(--tag-label-red);
 }
 
-#case-studies article#work h3 {
+#case-studies article.work h3 {
   font-family: var(--h3-font-family);
   font-size: var(--h3-font-size);
   font-weight: var(--h3-font-weight);
@@ -287,11 +290,11 @@ header#home > #avatar-container #avatar-img {
   color: var(--text-primary);
 }
 
-#case-studies article#work p {
+#case-studies article.work p {
   max-width: 421px;
 }
 
-#case-studies article#work img {
+#case-studies article.work img {
   width: 444px;
   height: 300px;
   border-radius: 24px;
