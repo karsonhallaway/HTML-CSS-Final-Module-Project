@@ -57,7 +57,7 @@ body {
 nav ul li a,
 #home p,
 #case-studies > .content-container p,
-#case-studies article#work p,
+#case-studies article.work p,
 #testimonials > .content-container p,
 #testimonials blockquote p,
 #recent-work > .content-container p,
@@ -72,7 +72,7 @@ footer p {
   color: var(--text-secondary);
 }
 
-#case-studies article#work a,
+#case-studies article.work a,
 #recent-work .work-container article a {
   display: inline-flex;
   align-items: center;
@@ -87,7 +87,7 @@ footer p {
   text-decoration: none;
 }
 
-#case-studies article#work a:hover,
+#case-studies article.work a:hover,
 #recent-work .work-container article a:hover {
   background-color: var(--color-black);
   color: var(--color-white);
