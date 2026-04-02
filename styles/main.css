@@ -10,11 +10,16 @@
 
 body {
     max-width: 1280px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 /* ===========================================
@@ -105,8 +110,7 @@ nav {
   top: 0;
   z-index: 1;
   gap: var(--spacing-2xl);
-  padding-top: var(--spacing-2xl);
-  padding-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
   background-color: var(--surface-primary);
 }
 
@@ -153,8 +157,18 @@ nav > #social-icons-container i:hover {
   color: var(--icon-secondary);
 }
 
+/* Hamburger Stles */
+.menu-toggle {
+  font-size: var(--font-size-lg);
+  padding: var(--spacing-lg);
+  cursor: pointer;
+  display: none;
+  margin-left: auto;
+
+}
+
 /* ===========================================
-   HEADER / HERO SECTION
+    HERO SECTION
    =========================================== */
 
 #home {
@@ -162,8 +176,8 @@ nav > #social-icons-container i:hover {
   align-items: center;
   justify-content: center;
   gap: var(--spacing-xl);
-  padding-top: var(--spacing-5xl);
-  padding-bottom: var(--spacing-5xl);
+  margin-top: var(--spacing-5xl);
+  margin-bottom: var(--spacing-5xl);
   border-radius: 16px;
 }
 
@@ -210,7 +224,7 @@ h1 {
   color: var(--color-white);
 }
 
-header#home > #avatar-container {
+#home > #avatar-container {
   width: 350px;
   height: 350px;
   border-radius: 50%;
@@ -218,7 +232,7 @@ header#home > #avatar-container {
   flex-shrink: 0;
 }
 
-header#home > #avatar-container #avatar-img {
+#home > #avatar-container #avatar-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -525,27 +539,3 @@ footer p {
    =========================================== */
 
 /* Tablet Styling */
-@media only screen and (max-width: 768px) {
-    /* Hide menu */
-    #menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        background-color: var(--surface-primary);
-        left: 0;
-        right: 0;
-        padding: var(--spacing-lg);
-    }
-
-    /* Show menu when ID is active */
-    #menu.active {
-        display: flex;
-    }
-    
-    ul {
-        align-items: center;
-    }
-
-}
-
