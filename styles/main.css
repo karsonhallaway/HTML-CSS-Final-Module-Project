@@ -107,6 +107,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1;
   gap: var(--spacing-2xl);
@@ -142,7 +143,7 @@ nav > #social-icons-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
+  width: 186px;
   height: 30px;
   color: var(--icon-primary);
   text-decoration: none;
@@ -150,6 +151,7 @@ nav > #social-icons-container {
 
 nav > #social-icons-container i {
   font-size: 20px;
+  color: var(--icon-primary);
 }
 
 nav > #social-icons-container i:hover {
@@ -555,6 +557,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: var(--spacing-2xl);
   }
 
   nav {
@@ -582,6 +585,26 @@ footer p {
     z-index: 1;
     border-bottom: 1px solid var(--border-primary);
   }
+}
 
+/* mobile styling */
+@media only screen and (max-width: 480px) {
+
+  .menu-toggle {
+    margin-right: var(--spacing-xl);
+  }
+  
+  #home {
+    flex-direction: column;
+    margin: auto, 0;
+  }
+
+  .content-container {
+   max-width: 400px;
+  }
+
+  #case-studies, #recent-work, #testimonials {
+    padding: 0 var(--spacing-lg);
+  }
 }
 
