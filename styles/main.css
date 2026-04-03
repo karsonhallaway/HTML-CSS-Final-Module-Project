@@ -135,11 +135,10 @@ nav ul li a:hover {
 nav > #social-icons-container {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
-  padding: 0 var(--spacing-xl);
+  gap: var(--spacing-md);
 }
 
-nav > #social-icons-container a {
+nav > #social-icons-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +156,7 @@ nav > #social-icons-container i:hover {
   color: var(--icon-secondary);
 }
 
-/* Hamburger Stles */
+/* Hamburger Styles */
 .menu-toggle {
   font-size: var(--font-size-lg);
   padding: var(--spacing-lg);
@@ -549,6 +548,39 @@ footer p {
 
   #case-studies article.work img {
     width: 50%;
+  }
+
+  /* show hamburger menu */
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  nav ul,
+  nav #social-icons-container {
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--surface-primary);
+    padding: var(--spacing-lg);
+    gap: var(--spacing-md);
+    z-index: 1;
+    border-bottom: 1px solid var(--border-primary);
   }
 
 }
