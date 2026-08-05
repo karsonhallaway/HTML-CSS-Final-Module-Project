@@ -110,7 +110,6 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1;
-  gap: var(--spacing-2xl);
   padding: var(--spacing-xl) 0;
   background-color: var(--surface-primary);
 }
@@ -118,7 +117,6 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  gap: var(--spacing-2xl);
   list-style: none;
 }
 
@@ -313,8 +311,7 @@ h1 {
   width: 444px;
   height: 300px;
   border-radius: 24px;
-  border: 1px solid var(--border-primary);
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -541,6 +538,10 @@ footer p {
 
 /* Tablet Styling */
 @media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
   #home > #avatar-container {
     width: 100px;
     height: 100px;
@@ -557,7 +558,6 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: var(--spacing-2xl);
   }
 
   nav {
@@ -589,14 +589,17 @@ footer p {
 
 /* mobile styling */
 @media only screen and (max-width: 480px) {
-
-  .menu-toggle {
-    margin-right: var(--spacing-xl);
-  }
   
   #home {
     flex-direction: column;
     margin: auto, 0;
+  }
+
+  #testimonials .content-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--spacing-xl);
+    width: 100%;
   }
 
   .content-container {
@@ -604,7 +607,7 @@ footer p {
   }
 
   #case-studies, #recent-work, #testimonials {
-    padding: 0 var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
   }
 }
 
