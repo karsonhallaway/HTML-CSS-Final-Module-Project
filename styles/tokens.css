@@ -38,9 +38,11 @@
 
   /* Tag Colors - Red */
   --tag-label-red: #ff0004;
+  --tag-background-red: #ffd0d1;
 
-  /* Accent Colors */
-  --accent-red: #ffd0d1;
+  /* Tag Colors - blue */
+  --tag-label-blue: #000AFF;
+  --tag-background-blue: #D0E6FF;
 
   /* ===========================================
      SPACING TOKENS

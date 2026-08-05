@@ -279,18 +279,23 @@ h1 {
   letter-spacing: var(--body-xs-bold-letter-spacing);
 }
 
-#case-studies article.work:nth-child(2) span {
+#case-studies article.work span.tag-blue {
+  background-color: var(--tag-background-blue);
+  color: var(--tag-label-blue);
+}
+
+#case-studies article.work span.tag-green {
   background-color: var(--tag-background-green);
   color: var(--tag-label-green);
 }
 
-#case-studies article.work:nth-child(3) span {
+#case-studies article.work span.tag-yellow {
   background-color: var(--tag-background-yellow);
   color: var(--tag-label-yellow);
 }
 
-#case-studies article.work:nth-child(4) span {
-  background-color: var(--accent-red);
+#case-studies article.work span.tag-red {
+  background-color: var(--tag-background-red);
   color: var(--tag-label-red);
 }
 
